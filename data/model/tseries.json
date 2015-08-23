@@ -1,0 +1,117 @@
+{
+    "_id" : ObjectId("55d0cf0e444ceafb3e9fc6a4"),
+    "title" : "Rons Energy Index",
+    "description" : "Weekly energy data",
+    "frequency" : "Weekly",
+    "perm" : "private",
+    "user_twitter" : "litzenberger",
+    "image": "https://pbs.twimg.com/profile_images/506567183007113216/UF5q5daw_bigger.jpeg",
+    "locked" : 1,
+    "sequence" :0,
+    "base" :0,
+    "geo" : "",
+    "date" : "2015-08-08",
+    "data" : [ 
+                {
+                    "key" : "United States Gasoline (UGA)",
+                    "source" :"http://finance.yahoo.com/q?s=UGA",
+                    "value" : 3371
+                }, 
+                {
+                    "key" : "local gas prices",
+                    "source" :"shell",
+                    "value" : 239
+                }, 
+                {
+                    "key" : "WTI oil",
+                    "source" :"http://www.nasdaq.com/markets/crude-oil.aspx",
+                    "value" : 4348
+                }, 
+                {
+                    "key" : "Teucrium Corn ETF (CORN)",
+                    "value" : 2324
+                }, 
+                {
+                    "key" : "Ethanol Futures (CBOT)",
+                    "value" : 146
+                }
+            ]
+},
+ {   "title" : "Rons Energy Index",
+    "description" : "Weekly energy data",
+    "frequency" : "Weekly",
+    "perm" : "private",
+    "user_twitter" : "litzenberger",
+        "image": "https://pbs.twimg.com/profile_images/506567183007113216/UF5q5daw_bigger.jpeg",
+    "locked" : 1,
+    "sequence" :1,
+    "base" :0,
+    "geo" : "",
+    "date" : "2015-08-15",
+    "data" : [ 
+                {
+                    "key" : "United States Gasoline (UGA)",
+                    "value" : 3470
+                }, 
+                {
+                    "key" : "local",
+                    "source" :"shell",
+                    "value" : 229
+                }, 
+                {
+                    "key" : "WTI oil",
+                    "source" :"http://www.nasdaq.com/markets/crude-oil.aspx",
+                    "value" : 4250
+                }, 
+                {
+                    "key" : "Teucrium Corn ETF (CORN)",
+                    "source" :"http://finance.yahoo.com/q?s=CORN",
+                    "value" : 2294
+                }, 
+                {
+                    "key" : "Ethanol Futures (CBOT)",
+                    "source" :"http://www.nasdaq.com/markets/ethanol.aspx",
+                    "value" : 147
+                }
+            ]
+        },
+         {   "title" : "Rons Energy Index",
+    "description" : "Weekly energy data",
+    "frequency" : "Weekly",
+    "perm" : "private",
+    "user_twitter" : "litzenberger",
+        "image": "https://pbs.twimg.com/profile_images/506567183007113216/UF5q5daw_bigger.jpeg",
+    "locked" : 1,
+    "base" :0,
+    "sequence" :1,
+    "geo" : "",
+    "date" : "2015-08-22",
+    "data" : [ 
+                {
+                    "key" : "United States Gasoline (UGA)",
+                    "source" :"http://finance.yahoo.com/q?s=UGA",
+                    "value" : 3172
+                }, 
+                {
+                    "key" : "local",
+                    "source" :"shell",
+                    "value" : 229
+                }, 
+                {
+                    "key" : "WTI oil",
+                    "source" :"http://www.nasdaq.com/markets/crude-oil.aspx",
+                    "value" : 4045
+                }, 
+                {
+                    "key" : "Teucrium Corn ETF (CORN)",
+                    "source" :"http://finance.yahoo.com/q?s=CORN",
+                    "value" : 2299
+                }, 
+                {
+                    "key" : "Ethanol Futures (CBOT)",
+                    "source" :"http://www.nasdaq.com/markets/ethanol.aspx",
+                    "value" : 144
+                }
+            ]
+        }
+}

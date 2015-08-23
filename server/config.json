@@ -1,0 +1,8 @@
+{
+  "mongo_connection": "mongodb://localhost/datapad?w=1",
+  "mongo_options": {
+    "server": {
+      "auto_reconnect": true
+    }
+  }
+}
