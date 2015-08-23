@@ -24,5 +24,10 @@ This was used to experiment with the following web technologies:
 Mongodb must be installed and started
 
 
+# ToDo
+
+Adding functionality.
+
+
 
 
