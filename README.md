@@ -1,6 +1,6 @@
 # Lab Exercise : Time Series
 
-Time series was built for making simple time series calculations and creating an index for any collection.  This was based on the Comment ReactJS example.
+Time series was built for making simple time series calculations or index for any collection.  This was based on the Comment ReactJS example.
 
 This was used to experiment with the following web technologies:
 
