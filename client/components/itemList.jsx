@@ -22,7 +22,7 @@ onInputChange : function(item,cell,key){
 },
 handleBlur : function(item,cell){
   if(this.trigger){
-this.props.onCommentSubmit(JSON.stringify({id: item.id, value: parseInt(cell)}));
+this.props.onCommentSubmit(JSON.stringify({id: item.key, value: parseInt(cell)}));
 this.trigger=false;
 }
 
@@ -36,7 +36,7 @@ this.trigger=false;
              var inputChange = this.onInputChange.bind(this,item);
               var blurChange = this.handleBlur.bind(this,item);
       return (
-        <Item  onClick={boundClick} key={i} onChange={inputChange} onBlur={blurChange} author={item.id} >
+        <Item  onClick={boundClick} key={i} onChange={inputChange} onBlur={blurChange} author={item.key} >
          {item.value}
       </Item>
       );

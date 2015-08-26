@@ -29,7 +29,7 @@ var iBox = React.createClass({
       url: apiDefault+this.props.params._id,//this.props.url,
       dataType: 'json',
       success: function(data) {
-        this.setState({data: data.d[1].data});
+        this.setState({data: data.data});
         this.setState({meta: data});
       }.bind(this),
       error: function(xhr, status, err) {
