@@ -52,7 +52,7 @@ module.exports = function( options) {
 		console.log("get data --");
 		// check if delta file exist
     		// mongodb
-    	var query={id:args.id};
+    	var query={user:args.id};
     	//query.id=args.id;
     	console.log(JSON.stringify(query));
     	storeClient.use('pad',function(){
