@@ -24,13 +24,14 @@ var iBox = React.createClass({
     return {data: [],meta:''};
   },
     loadCommentsFromServer: function() {
-    var apiDefault='api/getDefault/get?id=';//test 55d0cf0e444ceafb3e9fc6a4
+    var apiDefault='api/getPad/get?id=';//user litzenberger
     $.ajax({
       url: apiDefault+this.props.params._id,//this.props.url,
       dataType: 'json',
       success: function(data) {
-        this.setState({data: data.data});
-        this.setState({meta: data});
+        console.log("load " +JSON.stringify(data));
+        this.setState({data: data.response.data});
+        this.setState({meta: data.response});
       }.bind(this),
       error: function(xhr, status, err) {
         console.error(this.props.url, status, err.toString());
@@ -39,12 +40,13 @@ var iBox = React.createClass({
   },
    
     handleCommentSubmit: function(item) {
+      console.log(JSON.stringify(this.state.data));
     var items = this.state.data;
     var itemObj=JSON.parse(item);
-     var newItemss ={}
+     var newItems ={}
      var index=-1;
-     for(var i = 0, len = item.length; i < len; i++) {
-        if (item[i].id.toLowerCase() === itemObj.id.toLowerCase()) {
+     for(var i = 0, len = items.length; i < len; i++) {
+        if (items[i].key.toLowerCase() === itemObj.id.toLowerCase()) {
           index = i;
           break;
         }

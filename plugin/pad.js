@@ -15,16 +15,13 @@ module.exports = function( options) {
   var plugin = "pad"; 
 
   // init seneca plugins
-  seneca.add({role : plugin,cmd : 'get'}, getInit);
+  seneca.add({role : plugin,cmd : 'get'}, padData);
  // seneca.add({role : plugin,cmd : 'update'}, update);
   // store in a collection 
 
-
-
-
-  function getInit(args,cb){
+  function padData(args,cb){
     var seneca = this;
-    console.log("getInit");
+    console.log("get user data");
     var message={
       role:'ds',
       cmd : 'get',
@@ -35,7 +32,9 @@ module.exports = function( options) {
         function(err,result){
           if(err){return cb(err);}
           seneca.log.debug('fetch data done');
-          cb(null,result);
+         console.log("result  "+JSON.stringify(result));
+         return cb(null,{response:result[0]});
+
       });
   }
   return {

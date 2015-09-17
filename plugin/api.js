@@ -9,9 +9,9 @@ module.exports = function api( options ) {
 
   var valid_ops = { get:'get'}
 
-  this.add( 'role:api,path:getDefault', function( msg, respond ) {
+  this.add( 'role:api,path:getPad', function( msg, respond ) {
     this.act( 'role:pad', {
-      cmd:   valid_ops[msg.operation],
+      cmd:   valid_ops[msg.user],
       padId : msg.id
     }, respond )
   })
@@ -22,7 +22,7 @@ module.exports = function api( options ) {
       prefix: '/api',
       pin:    'role:api,path:*',
       map: {
-        getDefault: { GET:true, suffix:'/:operation' }
+        getPad: { GET:true, suffix:'/:user',handler:'print' }
       }
     }}, respond )
   })
