@@ -21,7 +21,7 @@
 
   ],
   "author": "ron litzenberegr (@litzenberger)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/SixLoop/timeseries/issues"
   },
