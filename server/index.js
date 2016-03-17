@@ -10,6 +10,7 @@
 require("node-jsx").install({ extension: ".jsx" });
 
 var path = require('path');
+var assert = require('assert')
 var config = require('./config');
 var express = require('express');
 var PORT = process.env.PORT || 3000;
@@ -21,6 +22,8 @@ var seneca = require( 'seneca' )()
  		.use( '../plugin/ds' ,config )
  		.use( '../plugin/api',config )
 
+assert.equal(1,1,"yes they are equal");
+//process.exit();
 // ----------------------------------------------------------------------------
 // Setup, Static Routes
 // ----------------------------------------------------------------------------
